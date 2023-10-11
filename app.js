@@ -1,4 +1,4 @@
-const add7 = function(n) {
+/* const add7 = function(n) {
   return n += 7;
 };
  
@@ -32,4 +32,18 @@ const fizzBuzz = function() {
   console.log('i love programming')
 }
 
-fizzBuzz();
+fizzBuzz(); */
+
+const btn = document.getElementById('btn');
+btn.addEventListener('click', (e) => {
+  e.target.style.background = 'blue';
+  e.target.style.color = 'white';
+});
+
+const buttons = document.querySelectorAll('button');
+
+buttons.forEach((button) => {
+  button.addEventListener('click', () => {
+    console.log(button.id);
+  })
+})
