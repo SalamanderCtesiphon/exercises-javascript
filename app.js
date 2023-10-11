@@ -15,11 +15,28 @@
 
 myObject["obnoxious property"] */
 
-function Player(name, marker) {
+/* function Player(name, marker) {
   this.name = name
   this.marker = marker
+  this.sayName = function() {
+    console.log(name)
+  }
 }
 
-const player = new Player('steve', 'X')
-console.log(player.name)
+const player1 = new Player('steve', 'X')
+const player2 = new Player("also steve", "O")
+player1.sayName()
+player2.sayName()  */
 
+function Book(title, author, pages, haveRead) {
+  this.title = title
+  this.author = author
+  this.pages = pages
+  this.info = function() {
+    return `${title} by ${author}, ${pages} pages, ${haveRead}`
+  }
+}
+
+const theHobbit = new Book('The Hobbit', 'JRR Tolkien', 295, 'have read')
+
+console.log(theHobbit.info())
