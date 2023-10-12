@@ -4,16 +4,41 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="/app.js" defer></script>
+  <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
 <body>
-  <p>hello</p>
-  <button id="btn">click me!</button>
-
-  <div id="container">
-    <button id="1">Click Me</button>
-    <button id="2">Click Me</button>
-    <button id="3">Click Me</button>
+  <div class="form-container">
+	<p class="title">Enter a book</p>
+	<form class="form">
+		<div class="input-group">
+			<label for="title">Title</label>
+			<input type="text" name="title" id="title" placeholder="">
+		</div>
+    <div class="input-group">
+			<label for="author">Author</label>
+			<input type="text" name="author" id="author" placeholder="">
+		</div>
+    <div class="input-group">
+			<label for="pages">Number of Pages</label>
+			<input type="text" name="pages" id="pages" placeholder="">
+		</div>
+    <div class="imput-group radio-group">
+      <label for="have-read">Have Read?</label>
+      <div>
+        <input type="radio" id="yes" name="have-read" value="yes">
+        <label for="yes">Yes</label>
+      </div>
+      <div>
+        <input type="radio" id="no" name="have-read" value="no">
+        <label for="no">No</label>
+      </div>
+    </div>
+    
+		<button class="sign">Add to Collection</button>
+	</form>
+</div>
+  
 </div>
 </body>
 </html>
