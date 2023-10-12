@@ -15,7 +15,7 @@
 
 myObject["obnoxious property"] */
 
-/* function Player(name, marker) {
+function Player(name, marker) {
   this.name = name
   this.marker = marker
   this.sayName = function() {
@@ -25,8 +25,7 @@ myObject["obnoxious property"] */
 
 const player1 = new Player('steve', 'X')
 const player2 = new Player("also steve", "O")
-player1.sayName()
-player2.sayName()  */
+
 
 function Book(title, author, pages, haveRead) {
   this.title = title
@@ -39,4 +38,4 @@ function Book(title, author, pages, haveRead) {
 
 const theHobbit = new Book('The Hobbit', 'JRR Tolkien', 295, 'have read')
 
-console.log(theHobbit.info())
+console.log(Object.getPrototypeOf(player1))
