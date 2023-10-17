@@ -77,6 +77,7 @@ body {
 }
 
 .sign {
+  cursor: pointer;
   display: block;
   width: 100%;
   background-color: rgba(167, 139, 250, 1);
